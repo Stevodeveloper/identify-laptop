@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="634.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Registration">
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="429.0" styleClass="anchorpane-form" stylesheets="@RegStyle.css" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="reg_number" layoutX="1.0" layoutY="139.0" prefHeight="26.0" prefWidth="212.0" promptText="Enter Reg No" styleClass="textfield" stylesheets="@RegStyle.css" />
+            <TextField fx:id="name" layoutX="2.0" layoutY="94.0" prefHeight="26.0" prefWidth="211.0" promptText="Enter Name" styleClass="textfield" stylesheets="@RegStyle.css" />
+            <TextField fx:id="phone_number" layoutX="229.0" layoutY="94.0" prefHeight="26.0" prefWidth="200.0" promptText="Enter Phone No" styleClass="textfield" stylesheets="@RegStyle.css" AnchorPane.rightAnchor="0.0" />
+            <TextField fx:id="id_number" layoutY="179.0" prefHeight="29.0" prefWidth="170.0" promptText="Enter ID No" styleClass="textfield" stylesheets="@RegStyle.css" AnchorPane.leftAnchor="0.0" />
+            <TextField fx:id="serial_number" layoutX="229.0" layoutY="139.0" prefHeight="26.0" prefWidth="200.0" promptText="Laptop's Serial Number" styleClass="textfield" stylesheets="@RegStyle.css" AnchorPane.rightAnchor="0.0" />
+            <Button fx:id="submit_button" layoutX="299.0" layoutY="362.0" mnemonicParsing="false" onAction="#Register" prefHeight="30.0" prefWidth="104.0" styleClass="submit-button" stylesheets="@RegStyle.css" text="Submit" AnchorPane.bottomAnchor="8.0" />
+            <Button fx:id="cancel_button" layoutX="14.0" layoutY="362.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="104.0" styleClass="cancel-button" stylesheets="@RegStyle.css" text="Cancel" AnchorPane.bottomAnchor="8.0">
+               <font>
+                  <Font name="Berlin Sans FB" size="12.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="90.0" layoutY="43.0" prefHeight="21.0" prefWidth="302.0" text="Welcome, Secure your Laptop Today!" textAlignment="CENTER">
+               <font>
+                  <Font name="Viner Hand ITC" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="upload_button" layoutX="277.0" layoutY="313.0" mnemonicParsing="false" onAction="#uploadImageButtonPushed" styleClass="upload-button" stylesheets="@RegStyle.css" text="Upload Photo">
+               <font>
+                  <Font name="Yu Gothic Medium" size="12.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="photo" fitHeight="150.0" fitWidth="150.0" layoutX="248.0" layoutY="173.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+   </right>
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Separator layoutX="197.0" layoutY="6.0" orientation="VERTICAL" prefHeight="383.0" prefWidth="0.0" />
+            <ImageView fitHeight="158.0" fitWidth="184.0" layoutX="10.0" layoutY="106.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@mmust%20logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>

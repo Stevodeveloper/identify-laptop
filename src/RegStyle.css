@@ -1,0 +1,49 @@
+.left-form{
+    -fx-background-color: #14a5b8;
+    -fx-border-color: #000;
+    -fx-border-width: 0.4px 0px .4px .4px;
+
+}
+.cancel-button{
+    
+   -fx-background-color: #14a5b8;
+   -fx-background-radius:15px;
+   -fx-cursor:hand;
+}
+.submit-button{
+    -fx-background-color: #14a5b8;
+    -fx-background-radius:15px;
+    -fx-cursor:hand;
+}
+.upload-button{
+    -fx-background-color: #14a5b8;
+    -fx-background-radius:15px;
+    -fx-cursor:hand;
+}
+.anchorpane-form{
+    -fx-background-color: #14a5b8;
+    
+}
+.submit-button:hover{
+    -fx-background-color:#27c419;
+}
+
+.cancel-button:hover{
+    -fx-background-color:#e40606;
+}
+.upload-button:hover{
+    -fx-background-color:#50e442
+}
+.upload_image{
+    -fx-background-color:#fdfdfd
+}
+.textfield{
+    -fx-background-color:transparent;
+    -fx-text-inner-color:#fff;
+    -fx-border-color:#fff;
+    -fx-border-width: 0px 0px .2px 0px;
+    -fx-font-size:15px;
+}
+.textfield:focused{
+    -fx-border-width:0px 0px .8px 0px;
+}
